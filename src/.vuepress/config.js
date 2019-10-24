@@ -1,7 +1,7 @@
 const currentDateUTC = new Date().toUTCString()
 
 module.exports = {
-	title: 'My New VuePress Blog',
+	title: 'Khmer Coders',
 	dest: './public',
 	themeConfig: {
 		repo: 'https://wwww.github.com',

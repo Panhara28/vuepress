@@ -5,12 +5,10 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <div>
-              <h1 class="kh-font-61">KHMER CODERS</h1>
-              <p class="kh-text-style">VERSION 2.0</p>
-              <p class="kh-text-comming-soon">Comming Soon</p>
-              <img src="../../public/description.png" alt />
-            </div>
+            <h1 class="kh-font-61">KHMER CODERS</h1>
+            <p class="kh-text-style">VERSION 2.0</p>
+            <p class="kh-text-comming-soon">Comming Soon</p>
+            <img class="img-fluid" src="../../public/description.png" alt />
           </div>
         </div>
       </div>
@@ -98,8 +96,7 @@ header.masthead {
   font-size: 28px;
 }
 
-.kh-open-brack,
-.kh-closing-brack {
-  font-size: 16px;
+.kh-b {
+  font-size: 100px;
 }
 </style>

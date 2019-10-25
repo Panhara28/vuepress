@@ -23,13 +23,18 @@ export default {
 </script>
 
 <template>
-  <section>
-    <time>{{ formatPublishDate }}</time>
-    <h3 class="blog-post__title">{{ item.frontmatter.title }}</h3>
-    <p v-if="item.frontmatter.excerpt">{{ item.frontmatter.excerpt }}</p>
-    <p v-if="item.readingTime">Estimated time: {{ item.readingTime.text }}</p>
-    <router-link class="button blog-post__button" :to="item.path">Read More ></router-link>
-  </section>
+  <div class="post-preview">
+    <a href="post.html">
+      <h2 class="post-title">{{ item.frontmatter.title }}</h2>
+      <h3 class="post-subtitle" v-if="item.frontmatter.excerpt">{{ item.frontmatter.excerpt }}</h3>
+    </a>
+    <p class="post-meta">
+      Posted by
+      <a href="#">Start Bootstrap</a>
+      {{ formatPublishDate }}
+    </p>
+    <router-link class="btn btn-primary" :to="item.path">Read More ></router-link>
+  </div>
 </template>
 
 <style scoped>

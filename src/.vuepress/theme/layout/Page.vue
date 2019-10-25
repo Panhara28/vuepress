@@ -4,28 +4,6 @@
     
     <Content :custom="false"/>
 
-    <div class="page-edit">
-      <div
-        class="edit-link"
-        v-if="editLink"
-      >
-        <a
-          :href="editLink"
-          target="_blank"
-          rel="noopener noreferrer"
-        >{{ editLinkText }}</a>
-        <OutboundLink/>
-      </div>
-
-      <div
-        class="last-updated"
-        v-if="lastUpdated"
-      >
-        <span class="prefix">{{ lastUpdatedText }}: </span>
-        <span class="time">{{ lastUpdated }}</span>
-      </div>
-    </div>
-
     <div class="page-nav" v-if="prev || next">
       <p class="inner">
         <span
@@ -59,6 +37,7 @@
 
     <slot name="bottom"/>
   </div>
+  
 </template>
 
 <script>
@@ -68,6 +47,9 @@ export default {
   props: ['sidebarItems'],
 
   computed: {
+    data() {
+      return this.$page.frontmatter;
+    },
     lastUpdated () {
       if (this.$page.lastUpdated) {
         return new Date(this.$page.lastUpdated).toLocaleString(this.$lang)

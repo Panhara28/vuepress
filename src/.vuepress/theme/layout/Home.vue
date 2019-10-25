@@ -69,13 +69,6 @@ export default {
   padding-right: 0px;
 }
 
-header.masthead {
-  position: relative;
-  background-color: #343434;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
 .kh-font-61 {
   font-size: 61px;
   font-weight: bold;

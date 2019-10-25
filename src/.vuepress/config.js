@@ -45,6 +45,8 @@ module.exports = {
 		['link', { rel: 'manifest', href: '/site.webmanifest' }],
 		['link', { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' }],
 		['meta', { name: 'msapplication-TileColor', content: '#da532c' }],
-		['meta', { name: 'theme-color', content: '#ffffff' }]
+		['meta', { name: 'theme-color', content: '#ffffff' }],
+		['link', { rel: 'stylesheet', type: "text/css", href: "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" }],
+		['link', { href: 'https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic', rel: 'stylesheet', type: 'text/css' }]
 	]
 }
